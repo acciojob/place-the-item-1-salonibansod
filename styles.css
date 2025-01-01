@@ -1,2 +1,41 @@
+/* Style for the holder container */
+.holder {
+  display: flex; /* Enable Flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Even spacing between items, first and last touching edges */
+  gap: 10px; /* Add spacing between items */
+  padding: 10px; /* Add padding around the container */
+  background-color: #f0f0f0; /* Optional: Light background for the container */
+}
+
+/* Style for individual items */
+.item {
+  flex: 0 1 100px; /* Fixed size for items with flexibility */
+  height: 100px; /* Set height for the items */
+  display: flex; /* Center content within the item */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  font-size: 24px; /* Font size for numbers */
+  font-weight: bold; /* Bold font */
+  color: white; /* Text color */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Colors for specific items */
+.item:nth-child(1) {
+  background-color: red; /* First item is red */
+}
+
+.item:nth-child(2) {
+  background-color: blue; /* Second item is blue */
+}
+
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(6),
+.item:nth-child(7) {
+  background-color: green; /* Other items are green */
+}
 
 /* Your CSS Code here. */
